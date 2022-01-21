@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Bob est moche
+  m_EditorClassIdentifier: 
+  Description: Salut moi c'est belle et Bob il est vraiment trop moche
+  Reponse1: Oui c'est vrai !!
+  Reponse2: Non c'est faux
+  ConsequenceReponse1:
+  - Name: Bob
+    JoyEffect: -10
+  ConsequenceReponse2:
+  - Name: Bob
+    JoyEffect: 10
