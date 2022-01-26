@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
   m_Name: Bob est moche
   m_EditorClassIdentifier: 
-  Description: Salut moi c'est belle et Bob il est vraiment trop moche
-  Reponse1: Oui c'est vrai !!
-  Reponse2: Non c'est faux
+  Description: Event1
+  Reponse1: Reponse1.1
+  Reponse2: Reponse1.2
   ConsequenceReponse1:
   - Name: Bob
     JoyEffect: -10

@@ -22,9 +22,10 @@ public class EventManager : MonoBehaviour
     {
         if (ActualEvent < Events.Count)
         {
-            Description.text = Events[ActualEvent].EventData.Description;
-            Reponse1Text.text = Events[ActualEvent].EventData.Reponse1;
-            Reponse2Text.text = Events[ActualEvent].EventData.Reponse2;
+
+            Description.text = LanguageSystem.TryGetTextByKey(Events[ActualEvent].EventData.Description);
+            Reponse1Text.text = LanguageSystem.TryGetTextByKey(Events[ActualEvent].EventData.Reponse1);
+            Reponse2Text.text = LanguageSystem.TryGetTextByKey(Events[ActualEvent].EventData.Reponse2);
         }
         else
         {
@@ -32,6 +33,13 @@ public class EventManager : MonoBehaviour
             Reponse1Text.text = "PLUS RIEN";
             Reponse2Text.text = "PLUS RIEN";
         }
+    }
+
+    public void RefreshUI()
+    {
+        Description.text = LanguageSystem.TryGetTextByKey(Events[ActualEvent].EventData.Description);
+        Reponse1Text.text = LanguageSystem.TryGetTextByKey(Events[ActualEvent].EventData.Reponse1);
+        Reponse2Text.text = LanguageSystem.TryGetTextByKey(Events[ActualEvent].EventData.Reponse2);
     }
 
 
