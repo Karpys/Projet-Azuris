@@ -7,6 +7,8 @@ public class TestGouvernail : MonoBehaviour
     Vector3 touchStart;
     private Touch touch;
     private float Amplitude;
+    public float RotationSpeed;
+
 
     // Update is called once per frame
     void Update()
@@ -28,13 +30,16 @@ public class TestGouvernail : MonoBehaviour
                 DragRelease();
             }
 
+            
+            transform.Rotate(Vector3.forward * Time.deltaTime * -Amplitude / 1200* RotationSpeed);
         }
     }
 
     void DragStart()
     {
-        touchStart = Camera.main.ScreenToWorldPoint(touch.position);
-        
+        touchStart = touch.position;
+        Debug.Log(touchStart);
+
     }
 
     void DragRelease()
@@ -44,7 +49,7 @@ public class TestGouvernail : MonoBehaviour
 
     void Dragging()
     {
-        Amplitude = Camera.main.ScreenToWorldPoint(touch.position).x - touchStart.x;
+        Amplitude =touch.position.x - touchStart.x;
         Debug.Log(Amplitude);
     }
 }
