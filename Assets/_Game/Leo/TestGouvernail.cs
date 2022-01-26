@@ -6,11 +6,19 @@ public class TestGouvernail : MonoBehaviour
 {
     Vector3 touchStart;
     private Touch touch;
-    private float Amplitude;
+    public float Amplitude;
     public float RotationSpeed;
+    public static TestGouvernail instance;
 
+    void Start()
+    {
+        if (instance != this && instance != null)
+        {
+            Destroy(this.gameObject);
+        }
 
-    // Update is called once per frame
+        instance = this;
+    }
     void Update()
     {
         
