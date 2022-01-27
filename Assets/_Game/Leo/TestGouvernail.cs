@@ -39,7 +39,7 @@ public class TestGouvernail : MonoBehaviour
             }
 
             
-            transform.Rotate(Vector3.forward * Time.deltaTime * -Amplitude / 1200* RotationSpeed);
+            transform.Rotate(Vector3.forward * Time.deltaTime * -Amplitude / 3000* RotationSpeed);
         }
     }
 
