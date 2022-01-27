@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Event2. 6
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Jazz
+    Text: "D'apres ce qu'on sait il y a une cr\xE9ature l\xE9gendaire qui est cach\xE9
+      dans la mer de nuage pr\xE8s d'ici"
+  - Name: Will
+    Text: "Mais tu veux affronter une telle cr\xE9ature avec aussi peu de personnes
+      et d'armes ????"
+  - Name: Jazz
+    Text: "Bah Alors ? On a peur du grand m\xE9chant monstre ?"
+  Reponse1: Ressurer Will
+  Reponse2: Jouer le jeu de Jazz
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Jazz
+      Text: Vous n'etes pas drole capitaine, vous cassez l'ambiance
+    JoyEffect: -5
+  - Dialogue:
+      Name: Will
+      Text: 
+    JoyEffect: 10
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Will
+      Text: Arretez de vous moquer de moi vous deux
+    JoyEffect: -10
+  - Dialogue:
+      Name: Jazz
+      Text: 
+    JoyEffect: 5

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Barouder2
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Jazz
+    Text: "D'accord tu veux mettre en avant mes choix mais concr\xE8tement ca changera
+      quoi ?"
+  - Name: Capitaine
+    Text: Tu as beau etre un sauvage dans l'ame tu sais ce que tu fais quand tu te
+      bat
+  - Name: Jazz
+    Text: Je te suis jusque-la mais ou veut tu en venir
+  Reponse1: "Te laisser \xE9tablir la strat\xE9gie au combat"
+  Reponse2: Soit mon bras droit et suit mes ordres
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Jazz
+      Text: "Ca me va mais la prochaine fois je me casse sans pr\xE9venir"
+    JoyEffect: 90
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Jazz
+      Text: Trouve quelqu'un d'autre d'assez fou pour te suivre moi je t'abandonne
+    JoyEffect: 0
+  - Dialogue:
+      Name: Defaite
+      Text: 
+    JoyEffect: 0

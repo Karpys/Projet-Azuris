@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+  m_text: Discussion
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -207,15 +207,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90.24
+  m_fontSize: 72
   m_fontSizeBase: 90.24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -640.1687, y: -358.03528, z: 0, w: -257.18015}
+  m_margin: {x: -640.1687, y: -64.96222, z: 0, w: -257.18015}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -459,7 +459,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+  m_text: 'Text
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -566,12 +568,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Characters:
-  - Name: Bob
+  - Name: Rufus
+    Visual: {fileID: 21300000, guid: fad46d94a605a3c40a5f27413c9d48fe, type: 3}
+    Joy: 50
+  - Name: Jazz
+    Visual: {fileID: 21300000, guid: 67318db04db3aa64f838254d4987e1ec, type: 3}
+    Joy: 50
+  - Name: Capitaine
     Visual: {fileID: 21300000, guid: d79d68e2976cd19448321c2c7fe45215, type: 3}
-    Joy: 100
-  - Name: Belle
+    Joy: 50
+  - Name: Lizzie
     Visual: {fileID: 21300000, guid: b1add92cfbc35bf4bb0ed0d5f823283b, type: 3}
-    Joy: 100
+    Joy: 50
+  - Name: Will
+    Visual: {fileID: 21300000, guid: 50c4edf4c119fe24b9b1b313b9c1d0ea, type: 3}
+    Joy: 50
+  - Name: RouteDroite
+    Visual: {fileID: 21300000, guid: 50c4edf4c119fe24b9b1b313b9c1d0ea, type: 3}
+    Joy: 0
+  - Name: Defaite
+    Visual: {fileID: 21300000, guid: 50c4edf4c119fe24b9b1b313b9c1d0ea, type: 3}
+    Joy: 0
 --- !u!4 &75139063
 Transform:
   m_ObjectHideFlags: 0
@@ -899,7 +916,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1943858428}
         m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
-        m_MethodName: ReponseInput
+        m_MethodName: NextDescription
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1313,7 +1330,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  m_text: 'Text
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1475,7 +1494,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1943858428}
         m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
-        m_MethodName: ReponseInput
+        m_MethodName: NextDescription
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1770,12 +1789,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Events:
-  - EventData: {fileID: 11400000, guid: 109fbe8bc90ab6f4da4fed425dd357f7, type: 2}
-  - EventData: {fileID: 11400000, guid: bd18b527a5e39684cabc7a1ea4eea0bb, type: 2}
+  - EventData: {fileID: 11400000, guid: 39f06723af8b166438cfa1eb2eaff5d5, type: 2}
+  - EventData: {fileID: 11400000, guid: 6e04d5e7e330497488053610fd0e47d9, type: 2}
+  - EventData: {fileID: 11400000, guid: 70028858794290d449220a36143ea97a, type: 2}
+  - EventData: {fileID: 11400000, guid: df12e041e97af9b43a13b4d3273acee7, type: 2}
+  - EventData: {fileID: 11400000, guid: 3e516c412c6d2974c84837a9858f4b06, type: 2}
+  - EventData: {fileID: 11400000, guid: 1b280d93f56a4a54680bfabd91264197, type: 2}
+  - EventData: {fileID: 11400000, guid: f152212b0b13fff4e94cf23dc61e8312, type: 2}
+  - EventData: {fileID: 11400000, guid: 02c7a24b71939b3419f18a3a56335b20, type: 2}
+  - EventData: {fileID: 11400000, guid: 4b05349ed7183954f9a265add3000a28, type: 2}
+  - EventData: {fileID: 11400000, guid: c3aecdf1c1fb6284385b0ef487b195d2, type: 2}
+  - EventData: {fileID: 11400000, guid: cce66eeba358d4d4a9b9403b1f84b7ba, type: 2}
+  - EventData: {fileID: 11400000, guid: 9b8a4c47abfb2914cb881ce951ccbeed, type: 2}
+  - EventData: {fileID: 11400000, guid: 7d114b4e97fdcff48a29ef2d91332b06, type: 2}
+  - EventData: {fileID: 11400000, guid: b8d969b8f7d679842ae43def8c2348e3, type: 2}
+  - EventData: {fileID: 11400000, guid: c41b595d3844e044d9b1f684def16462, type: 2}
+  - EventData: {fileID: 11400000, guid: fe4419a7d2c0db54c92a9223a2ba5360, type: 2}
+  - EventData: {fileID: 11400000, guid: dc4bdf345449ea64986474cf5a45055f, type: 2}
+  - EventData: {fileID: 11400000, guid: 465253d420d25c14d9dc3a1988034739, type: 2}
   Characters: {fileID: 75139062}
   ActualEvent: 0
   AnimUi: {fileID: 1647571150}
   State: 0
+  ActualDescription: 0
+  ActualDialogue:
+    Name: 
+    Text: 
+  JazzEvent:
+  - EventData: {fileID: 11400000, guid: fc2bd2085ec2fc646bf4468a39a3b10a, type: 2}
+  - EventData: {fileID: 11400000, guid: aa69768771c58d24cbd2a9da3b6f8997, type: 2}
+  MecaEvent:
+  - EventData: {fileID: 11400000, guid: 153c7ef62f386004c9b1d92e8408233a, type: 2}
+  - EventData: {fileID: 11400000, guid: 38bd7909816431b4fb45e14e2397d9f4, type: 2}
+  MedecinEvent:
+  - EventData: {fileID: 11400000, guid: b7832e8a8ceff92438fb9e8393456cad, type: 2}
+  - EventData: {fileID: 11400000, guid: 7ef9b1c78c3ea6f41b7473e98f3a0c04, type: 2}
+  NavigateurEvent:
+  - EventData: {fileID: 11400000, guid: 0a8b96ca065f9ab4dae0d79d4f346267, type: 2}
+  - EventData: {fileID: 11400000, guid: a85386b2c613bd047bbc7b5cda91dd05, type: 2}
+  RouteDroite:
+  - EventData: {fileID: 11400000, guid: ad0bf0b59970d114f98d678236a5ca1d, type: 2}
+  - EventData: {fileID: 11400000, guid: e1ae46a2cd4aaee489a9a52a3b65f099, type: 2}
+  - EventData: {fileID: 11400000, guid: d570ef26aeaa07540b18f03be484386d, type: 2}
+  - EventData: {fileID: 11400000, guid: 3f2f1b973d9e10e47983cc825ac3d743, type: 2}
+  - EventData: {fileID: 11400000, guid: 16f70147988ecac4d8bbc46ce940c103, type: 2}
+  RouteGauche: []
   Description: {fileID: 34314674}
   Reponse1Text: {fileID: 73891390}
   Reponse2Text: {fileID: 1458634647}

@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Event4. 1
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Capitaine
+    Text: "Quelques heures plus tard apr\xE8s la fuite"
+  - Name: Capitaine
+    Text: "Jazz est mort en h\xE9ros comme il le souhaite et surement en gardant
+      son sourire idiot tout du long je parle"
+  - Name: Lizzie
+    Text: "C'etait peut etre un idiot fini mais il m\xE9ritait mieux que de mourir
+      en sacrifice pour nous"
+  - Name: Rufus
+    Text: La vie est vraiment fragile, meme pour un jeunot comme lui faut croire
+  - Name: Will
+    Text: Si seulement ce monde n'etait pas si pourri il serait encore parmi nous
+  - Name: Capitaine
+    Text: On devrais surement s'arreter un instant
+  Reponse1: Prendre le temps de creuser une tombe
+  Reponse2: Reprendre la route rapidement
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Capitaine
+      Text: "Il n'aurait surement pas voulu nous voir larmoyant mais il ne sera pas
+        oubli\xE9  au moins"
+    JoyEffect: 0
+  - Dialogue:
+      Name: Lizzie
+      Text: 
+    JoyEffect: 10
+  - Dialogue:
+      Name: Will
+      Text: 
+    JoyEffect: 10
+  - Dialogue:
+      Name: Rufus
+      Text: 
+    JoyEffect: 10
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Rufus
+      Text: "Personne ne m\xE9rit\xE9 de partir sans qu'on se souvienne de lui et
+        c'est inhumain de faire aucun geste"
+    JoyEffect: 0
+  - Dialogue:
+      Name: Lizzie
+      Text: 
+    JoyEffect: -10
+  - Dialogue:
+      Name: Will
+      Text: 
+    JoyEffect: -10
+  - Dialogue:
+      Name: Rufus
+      Text: 
+    JoyEffect: -10

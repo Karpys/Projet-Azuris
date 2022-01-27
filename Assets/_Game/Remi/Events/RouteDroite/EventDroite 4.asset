@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: EventDroite 4
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Capitaine
+    Text: Encore plus de dirigeables sont apparus
+  - Name: Jazz
+    Text: "C'est comme ca apr\xE8s tout, bon ce sera court comme adieux mais penser
+      \xE0 ch\xE9rir mes troph\xE9es et \xE0 leurs faire prendre de la valeur"
+  - Name: Capitaine
+    Text: Pas question de te laisser y aller ce n'est pas encore fini
+  Reponse1: Rattraper Jazz
+  Reponse2: Rattraper Jazz
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Jazz
+      Text: "Ce fut marrant d'etre avec vous malgr\xE9 tout"
+    JoyEffect: 0
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Jazz
+      Text: "Ce fut marrant d'etre avec vous malgr\xE9 tout"
+    JoyEffect: -5

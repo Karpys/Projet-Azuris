@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Event1.5
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Will
+    Text: "Capitaine, on voit un Narval c\xE9leste \xE0 travers les nuages !"
+  - Name: Capitaine
+    Text: Et c'est rare ?
+  - Name: Will
+    Text: "Plus que rare meme ! Ils ont quasiment tous disparus de cette r\xE9gion
+      quand la guerre avait commenc\xE9 il y a 10 ans, c'est un sp\xE9cimen rare
+      \xE0 observer"
+  - Name: Lizzie
+    Text: "A observer de loin. A la moidre fausse manipulation on finira tous par
+      mourir \xE9cras\xE9s ou mang\xE9s par quelque chose sous la mer"
+  Reponse1: Se rapprocher prudemment
+  Reponse2: Ne prendre aucun risque
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Will
+      Text: "Merci beaucoup je vais pouvoir r\xE9cup\xE9rer un \xE9chantillon pour
+        fabriquer des rem\xE8des"
+    JoyEffect: 10
+  - Dialogue:
+      Name: Lizzie
+      Text: 
+    JoyEffect: -10
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Lizzie
+      Text: Jamais je ne laisserais mon beau navire etre mis en danger pour si peu
+        retiens bien
+    JoyEffect: 10
+  - Dialogue:
+      Name: Will
+      Text: 
+    JoyEffect: -10

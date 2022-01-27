@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Event1.2
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Will
+    Text: "Capitaine, j'ai trouv\xE9 un Loup ail\xE9 bless\xE9 \xE0 cot\xE9 d'un
+      buisson, je peux utiliser le mat\xE9riel qu'on a pour le soigner ?"
+  - Name: Rufus
+    Text: "Tu crois qu'on a du mat\xE9riel m\xE9dical en quantit\xE9 hein?"
+  - Name: Rufus
+    Text: "ce serait bien d'\xE9conomiser ce qu'on a en cas de soucis, comment tu
+      va soigner l'autre sauvage de Jazz si tu d\xE9pense tout comme ca ?"
+  - Name: Will
+    Text: Mais on ne peut pas le laisser comme ca
+  Reponse1: Soignons le ca devrais aller
+  Reponse2: Economisons nos ressources pour cette fois
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Will
+      Text: Merci Capitaine !
+    JoyEffect: 10
+  - Dialogue:
+      Name: Rufus
+      Text: 
+    JoyEffect: -10
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Will
+      Text: Arf mais doit bien y avoir quelque chose que l'on peut faire
+    JoyEffect: -10
+  - Dialogue:
+      Name: Rufus
+      Text: "Je vais enfin pouvoir r\xE9parer mon navire ch\xE9ri"
+    JoyEffect: 10

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Event3. 1
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Jazz
+    Text: "Capitaine !! Une arm\xE9e de dirigeable de l'empire est derri\xE8re nous
+      !!"
+  - Name: Capitaine
+    Text: "Fini de jouer il va falloir qu'on soit fort pour s'en sortir, Tout le
+      monde \xE0 son poste !"
+  - Name: Lizzie
+    Text: "On peut fuir ou les affronter mais dans tout les cas je ne sais pas si
+      le navire \xE0 la puissance n\xE9cessaire pour faire l'un ou l'autre sans sacrifice
+      !"
+  Reponse1: Fuir la flotte de navire
+  Reponse2: Essayer de les affronter
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Jazz
+      Text: Vous etes aussi fou que moi mais c'est bien notre seule chance
+    JoyEffect: 0
+  - Dialogue:
+      Name: RouteDroite
+      Text: 
+    JoyEffect: 0
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Lizzie
+      Text: Moteur pleines vapeur en priant pour que ca casse pas
+    JoyEffect: 0
+  - Dialogue:
+      Name: RouteDroite
+      Text: 
+    JoyEffect: 5
