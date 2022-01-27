@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: EventGauche 3
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Capitaine
+    Text: Ils vont nous rattraper.
+  - Name: Rufus
+    Text: "Nos options deviennent limit\xE9 on va devoir se repr\xE9parer \xE0 combattre
+      !"
+  - Name: Jazz
+    Text: "N\xE9anmoins avec les r\xE9parations et nos ressources va falloir choisir
+      entre la d\xE9fense et l\u2019attaque."
+  Reponse1: "Privil\xE9gier l\u2019attaque"
+  Reponse2: "Privil\xE9gier la d\xE9fense"
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Lizzie
+      Text: "Faudrait penser un peu \xE0 notre survie aussi."
+    JoyEffect: -5
+  - Dialogue:
+      Name: Jazz
+      Text: 
+    JoyEffect: 5
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Jazz
+      Text: Mais on va finir par perdre si ils nous encerclent.
+    JoyEffect: -5
+  - Dialogue:
+      Name: Lizzie
+      Text: 
+    JoyEffect: 5

@@ -23,8 +23,8 @@ MonoBehaviour:
     Text: "On peut fuir ou les affronter mais dans tout les cas je ne sais pas si
       le navire \xE0 la puissance n\xE9cessaire pour faire l'un ou l'autre sans sacrifice
       !"
-  Reponse1: Fuir la flotte de navire
-  Reponse2: Essayer de les affronter
+  Reponse1: Essayer de les affronter
+  Reponse2: Fuir la flotte de navire
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
@@ -41,6 +41,6 @@ MonoBehaviour:
       Text: Moteur pleines vapeur en priant pour que ca casse pas
     JoyEffect: 0
   - Dialogue:
-      Name: RouteDroite
+      Name: RouteGauche
       Text: 
     JoyEffect: 5

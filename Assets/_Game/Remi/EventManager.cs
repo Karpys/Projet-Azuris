@@ -30,6 +30,7 @@ public class EventManager : MonoBehaviour
     public TMP_Text Reponse1Text;
     public TMP_Text Reponse2Text;
     public Image SpriteCharacter;
+
     public void Start()
     {
         State = GAMESTATE.OPEN;
@@ -135,6 +136,7 @@ public class EventManager : MonoBehaviour
         }
         Reponse1Text.text = "";
         Reponse2Text.text = "";
+        BarreManager.instance.UpdateUI();
         CheckEquipage();
         Events.RemoveAt(0);
         StartCoroutine(CloseEvent(Speed));
@@ -151,6 +153,9 @@ public class EventManager : MonoBehaviour
         {
             AddEvent(RouteGauche);
             RouteGauche.Clear();
+        }else if (name == "MortJazz")
+        {
+            BarreManager.instance.HideBarre(1);
         }else if (name == "Defaite")
         {
             Debug.Log("Defaite");
@@ -205,7 +210,7 @@ public class EventManager : MonoBehaviour
                 return Characters.Characters[i];
             }
         }
-        Debug.Log("Pas trouvé");
+        Debug.Log("Pas trouvï¿½");
         return null;
     }
 
