@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
   m_Name: BobQuiPu
   m_EditorClassIdentifier: 
-  Description: 'Olala bob il pu, il faut lui dire de mettre du deo la '
-  Reponse1: Oui tu as raison il sent fort
-  Reponse2: J'aime bien son odeur corporelle perso miam
+  Description: Event2
+  Reponse1: Reponse2.1
+  Reponse2: Reponse2.2
+  Character: {fileID: 21300000, guid: d79d68e2976cd19448321c2c7fe45215, type: 3}
   ConsequenceReponse1:
   - Name: Bob
     JoyEffect: -50
