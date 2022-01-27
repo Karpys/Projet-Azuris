@@ -15,6 +15,6 @@ public class CameraMovement : MonoBehaviour
     {
         transform.position = Vector3.Lerp(transform.position,Zepellin.transform.position,1*Time.deltaTime);
         transform.position = new Vector3(transform.position.x, InitialHeight, transform.position.z);
-        transform.rotation = Quaternion.Lerp(transform.rotation, Zepellin.transform.rotation, 0.5f * Time.deltaTime);
+        transform.rotation = Quaternion.Lerp(transform.rotation, Zepellin.transform.rotation, 10f * Time.deltaTime);
     }
 }
