@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Meca 2
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Lizzie
+    Text: Mais du coup que va tu changer de plus ?
+  - Name: Capitaine
+    Text: Tu aimerais qu'on mettre quoi en place pour etre plus respectueux
+  - Name: Lizzie
+    Text: "Chaque personne doit s'atteler aux taches de nettoyage et d'entretient
+      basique du navire et toute personne qui casse quelque chose le r\xE9pare imm\xE9diatement
+      sans attendre"
+  Reponse1: "Obliger l'\xE9quipage \xE0 suivre ses demandes"
+  Reponse2: Lui proposer une promotion
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Lizzie
+      Text: "Si le navire \xE0 nouveau en mauvais \xE9tat \xE0 cause de vous c'est
+        fini"
+    JoyEffect: 90
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Lizzie
+      Text: Quittez le navire je nous fais tous sauter !
+    JoyEffect: 0
+  - Dialogue:
+      Name: Defaite
+      Text: 
+    JoyEffect: 0

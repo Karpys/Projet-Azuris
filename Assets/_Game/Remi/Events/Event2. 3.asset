@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Event2. 3
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Rufus
+    Text: "Dirigeable inconnu \xE0 port\xE9e"
+  - Name: Will
+    Text: C'est une dirigeable marchand on ferait mieux de refaire le plein de marchandises
+  - Name: Capitaine
+    Text: Refaire le plein de munitions et armes ou de vivres serait pas mal
+  Reponse1: "Choisir l'\xE9quipement"
+  Reponse2: Choisir les vivres
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Jazz
+      Text: "Enfin du renouveau dans notre \xE9quipement"
+    JoyEffect: 10
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Will
+      Text: Enfin autre chose que la meme viande en boucle
+    JoyEffect: 5
+  - Dialogue:
+      Name: Jazz
+      Text: 
+    JoyEffect: -5
+  - Dialogue:
+      Name: Rufus
+      Text: 
+    JoyEffect: 5
+  - Dialogue:
+      Name: Lizzie
+      Text: 
+    JoyEffect: 5

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Last Event
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Capitaine
+    Text: "Apr\xE8s toutes ces aventures pass\xE9es ensembles, les diff\xE9rents
+      protagonistes ont finis par se s\xE9parer dans diff\xE9rentes nations qui les
+      ont accept\xE9s malgr\xE9 leurs fuites"
+  - Name: Capitaine
+    Text: "Certains sont devenus ing\xE9nieurs en chefs"
+  - Name: Capitaine
+    Text: "D'autres m\xE9decins g\xE9n\xE9raux"
+  - Name: Capitaine
+    Text: "Et certains ont pr\xE9vus de finir leurs jours dans un petit village avec
+      toute la fortune possible"
+  - Name: Capitaine
+    Text: "Mais quoi qu'il en soit il est important de retenir que ce n'est que le
+      d\xE9but de ce que ce monde \xE0 a proposer"
+  - Name: Capitaine
+    Text: "Et que un jour peut-etre les vents de ce monde les r\xE9uniras \xE0 nouveau
+      pour une nouvelle aventure"
+  Reponse1: Fin
+  Reponse2: Fin
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Capitaine
+      Text: 
+    JoyEffect: 0
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Capitaine
+      Text: 
+    JoyEffect: 0

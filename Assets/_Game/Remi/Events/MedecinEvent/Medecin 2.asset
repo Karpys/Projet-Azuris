@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Medecin 2
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Will
+    Text: "Le prochain qui ne suit pas mes indications a la lettre pour etre remis
+      sur pied pour aller se d\xE9brouiller seul"
+  - Name: Capitaine
+    Text: Si on survit c'est que tout va bien nan ?
+  - Name: Will
+    Text: Nan vous pouvez mourir pourir un rien et j'ai besoin de gens pour avancer
+      alors soit vous suivez mes indications soit je pars
+  Reponse1: Mettre en place une salle close pour les soins
+  Reponse2: Retirer la croute de Jazz au couteau
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Will
+      Text: "C'est correct comme choix au moins vous ne fuirez plus tr\xE8s loin"
+    JoyEffect: 90
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Will
+      Text: C'est fini pour vous je vous abandonne
+    JoyEffect: 0
+  - Dialogue:
+      Name: Defaite
+      Text: 
+    JoyEffect: 0

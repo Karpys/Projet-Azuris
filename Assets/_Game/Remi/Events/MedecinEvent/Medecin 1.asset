@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Medecin 1
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Will
+    Text: C'est fini j'abandonne
+  - Name: Capitaine
+    Text: Tout va bien ?
+  - Name: Will
+    Text: "Non rien ne va, personne ne tient jamais compte de mes recommandations
+      et ils ne gu\xE9rissent jamais et si personne ne se bat c'est fini"
+  Reponse1: "Appeler les autres et les forcer \xE0 \xE9couter"
+  Reponse2: "Jouer avec le pansement de ma derni\xE8re blessure"
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Will
+      Text: "Si tout le monde m\xE9coute au moins une fois on pourra s'en sortir"
+    JoyEffect: 0
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Will
+      Text: J'abandonne vraiment, c'est impossible de soigner des cadavres sur pattes
+    JoyEffect: 0
+  - Dialogue:
+      Name: Defaite
+      Text: 
+    JoyEffect: 0

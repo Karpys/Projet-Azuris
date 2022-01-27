@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Event2. 5
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Capitaine
+    Text: Personne ne sait qu'on est en fuite on ferait mieux d'en profiter pour
+      chercher des infos
+  - Name: Will
+    Text: Il faudrait qu'on puisse trouver une route sure pour la suite
+  - Name: Lizzie
+    Text: "Je pense surtout qu'il faudrait am\xE9liorer l'etat de notre vaisseau
+      dans l'im\xE9diat"
+  Reponse1: Ecouter Will
+  Reponse2: Ecouter Lizzie
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Will
+      Text: C'est moins dangereux de connaitre notre route
+    JoyEffect: 10
+  - Dialogue:
+      Name: Lizzie
+      Text: 
+    JoyEffect: -10
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Lizzie
+      Text: "Renforcer le vaisseau maintenant c'\xE9tait le mieux a faire"
+    JoyEffect: 10
+  - Dialogue:
+      Name: Will
+      Text: 
+    JoyEffect: -10

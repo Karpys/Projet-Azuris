@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Event4. 3
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Capitaine
+    Text: On approche bientot de la limite du territoire de l'Empire
+  - Name: Will
+    Text: Bientot la fin de ce voyage alors
+  - Name: Capitaine
+    Text: Une fin pour cette aventure mais la renaissance de nos vies ensuite une
+      fois sortis de ce merdier
+  Reponse1: "Consigner tout le p\xE9riple dans un carnet"
+  Reponse2: Laisser le vent se rappeler du voyager pour nous
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Will
+      Text: Consigner tout ca dans un journal permettrait d'en faire une superbe
+        histoire par la suite
+    JoyEffect: 10
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Lizzie
+      Text: "C'est surement ce qu'aurait fait cet idiot apr\xE8s tout"
+    JoyEffect: 10

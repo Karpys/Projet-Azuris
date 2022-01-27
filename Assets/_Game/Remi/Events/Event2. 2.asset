@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Event2. 2
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Rufus
+    Text: Jazz tu pourrais faire un effort et prendre ton temps quand tu peche ou
+      chasse
+  - Name: Jazz
+    Text: T'insinue quoi par la hein ?
+  - Name: Rufus
+    Text: Tu tires n'importe comment tu gaspilles les charges du harpon comme personne
+  Reponse1: "Forcer Jazz \xE0 pecher au filet"
+  Reponse2: "Laisser Jazz Pecher comme il pr\xE9f\xE8re"
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Jazz
+      Text: "Mais c'est pourri le filet tu crois que j'ai attrap\xE9 de belles avec"
+    JoyEffect: -10
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Jazz
+      Text: Il y au moins quelqu'un qui me comprend ici
+    JoyEffect: 0
+  - Dialogue:
+      Name: Rufus
+      Text: 
+    JoyEffect: -10

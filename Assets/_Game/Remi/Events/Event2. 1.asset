@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Event2. 1
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Capitaine
+    Text: "Tant qu'on est arret\xE9 l\xE0 on ferait mieux d'aller envoyer quelqu'un
+      r\xE9cup\xE9rer un peu d'acier on en manque cruellement"
+  - Name: Will
+    Text: Personne n'a envie de s'y coller on est d'accord
+  - Name: Capitaine
+    Text: "S'y personne ne s'y colle on va perdre du temps et des potentielles ressources
+      alors je vais d\xE9signer hein"
+  Reponse1: Choisir Jazz pour aller miner
+  Reponse2: Choisir Will pour aller miner
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Jazz
+      Text: Toujours moi qu'on choisit quand faut taper comme une brute c'est chiant
+    JoyEffect: -10
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Will
+      Text: Vous pensez vraiment qu'avec ma carrure je vais y arriver
+    JoyEffect: -10
+  - Dialogue:
+      Name: Rufus
+      Text: 
+    JoyEffect: -5

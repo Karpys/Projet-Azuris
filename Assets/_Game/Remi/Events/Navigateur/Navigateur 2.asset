@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Navigateur 2
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Rufus
+    Text: Si tu veux me garder moi et mes avantages sur ton navire va falloir faire
+      des concessions gamin !
+  - Name: Capitaine
+    Text: Je t'ecoute
+  - Name: Rufus
+    Text: "Arreter de depenser toutes les ressources du navire sans penser \xE0 l'apr\xE8s
+      vous allez nous ruiner et on pourra plus avancer"
+  Reponse1: "Proposer de mettre en place un inventaire r\xE9gulier"
+  Reponse2: Taper un plongeon dans le coffre d'or
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Rufus
+      Text: "C'est un bon d\xE9but on verra ou tu arriveras \xE0 les amener avec"
+    JoyEffect: 90
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Rufus
+      Text: Sort de mon Or ou t'es mort !
+    JoyEffect: 0
+  - Dialogue:
+      Name: Defaite
+      Text: 
+    JoyEffect: 0
