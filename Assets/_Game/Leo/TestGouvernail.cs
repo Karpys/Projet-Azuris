@@ -53,6 +53,7 @@ public class TestGouvernail : MonoBehaviour
     void DragRelease()
     {
         touchStart = Vector3.zero;
+        Amplitude = 0;
     }
 
     void Dragging()
