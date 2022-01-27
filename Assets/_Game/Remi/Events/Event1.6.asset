@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Event1.6
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Lizzie
+    Text: "Capitaine, je pense qu'on va avoir un probl\xE8me avec un des moteurs"
+  - Name: Capitaine
+    Text: Ca implique quoi ?
+  - Name: Lizzie
+    Text: "Si on le laisse comme ca on va perdre le moteur, je peux le r\xE9parer
+      avec ce que j'ai mais si j'ai mais si j'ai acc\xE8s \xE0 plus de ressource
+      je peux le remettre comme neuf"
+  Reponse1: "R\xE9pare le moteur au minimum"
+  Reponse2: Prend dans le stockage on fera avec
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Lizzie
+      Text: C'est comme si c'etait fait
+    JoyEffect: 5
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Lizzie
+      Text: Avec plaisir
+    JoyEffect: 5
+  - Dialogue:
+      Name: Rufus
+      Text: 
+    JoyEffect: -5

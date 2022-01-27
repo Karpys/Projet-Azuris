@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Event4. 4
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Lizzie
+    Text: "Nous y voila, apr\xE8s tout ce temps"
+  - Name: Rufus
+    Text: "Tout n'aura pas \xE9t\xE9 de tout repos pour ma pauvre carrure"
+  - Name: Will
+    Text: On a fini par le faire et il ne reste plus qu'a tout reconstruire
+  - Name: Capitaine
+    Text: Je vous propose de trinquer une bonne fois pour toute pour mettre fin a
+      ce chapitre de nos vies
+  Reponse1: Trinquer avec 5 coupes
+  Reponse2: Trinquer avec 4 coupes
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Rufus
+      Text: "De cette mani\xE8re tout le monde est concern\xE9 pas vrai ?"
+    JoyEffect: 30
+  - Dialogue:
+      Name: Lizzie
+      Text: "De cette mani\xE8re tout le monde est concern\xE9 pas vrai ?"
+    JoyEffect: 30
+  - Dialogue:
+      Name: Will
+      Text: "De cette mani\xE8re tout le monde est concern\xE9 pas vrai ?"
+    JoyEffect: 30
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Lizzie
+      Text: Le faire comme ca me donne l'impression d'oublier quelque chose
+    JoyEffect: -10
+  - Dialogue:
+      Name: Rufus
+      Text: 
+    JoyEffect: -10
+  - Dialogue:
+      Name: Will
+      Text: 
+    JoyEffect: -10

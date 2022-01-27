@@ -14,6 +14,6 @@ public class Events
 [System.Serializable]
 public class Consequence
 {
-    public string Name;
+    public Dialogue Dialogue;
     public int JoyEffect;
 }

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Baroudeur 1
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Jazz
+    Text: J'en ai marre c'est plus possible si ca continue comme ca je me casse
+  - Name: Capitaine
+    Text: Tu pourrais au moins expliquer ce qu'il se passe avant de gueuler et de
+      te barrer ?
+  - Name: Jazz
+    Text: "Vos diff\xE9rents Ordre sont d\xE9biles et ne m\xE8neront nulle part alors
+      soit vous changez soit je me d\xE9brouillerais tr\xE8s bien tout seul pour
+      fuir"
+  Reponse1: Proposer de mettre en avant ses choix
+  Reponse2: Offrir une petite fleur en compensation
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Jazz
+      Text: "C'est un bon d\xE9but mais va falloir plus que ca"
+    JoyEffect: 10
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Jazz
+      Text: Ce navire est fini et je ne reste pas dessus
+    JoyEffect: 0
+  - Dialogue:
+      Name: Defaite
+      Text: 
+    JoyEffect: 0

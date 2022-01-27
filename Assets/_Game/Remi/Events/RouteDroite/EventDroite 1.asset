@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: EventDroite 1
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Jazz
+    Text: "Accostons les, avec notre \xE9quipement c'est plus sur d'etre au contact"
+  - Name: Capitaine
+    Text: Entendu !
+  - Name: Lizzie
+    Text: "Je n'ai pas de soucis avec ca mais il faut quand meme garder quelqu'un
+      sur le navire avec moi pour me prot\xE9ger en plus du capitaine !"
+  Reponse1: 'Garder Will sur le navire '
+  Reponse2: Garder Rufus sur le navire
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Will
+      Text: "C'est bien de rester ici comme ca je peux peut etre \xE9viter le combat"
+    JoyEffect: 10
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Rufus
+      Text: Si je reste la qui va aider cet idiot de Jazz
+    JoyEffect: -5
+  - Dialogue:
+      Name: Will
+      Text: 
+    JoyEffect: -5

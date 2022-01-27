@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Event1.4
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Jazz
+    Text: Regardez, un banc de sardines volantes !!
+  - Name: Jazz
+    Text: Laissez-moi essayer de les pecher on aura du poisson pour un moment avec
+      mes talents de chasseur
+  - Name: Will
+    Text: "Tu fais tellement de bruit quand tu chasses ou peches que tu vas juste
+      d\xE9ranger tout le monde"
+  Reponse1: Laisse le pecher
+  Reponse2: Cache les harpons et les filets
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Jazz
+      Text: C'est parti !!!
+    JoyEffect: 10
+  - Dialogue:
+      Name: Rufus
+      Text: 
+    JoyEffect: -5
+  - Dialogue:
+      Name: Will
+      Text: 
+    JoyEffect: -5
+  - Dialogue:
+      Name: Lizzie
+      Text: 
+    JoyEffect: -5
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Jazz
+      Text: Pourquoi il y a plus aucune trace des filets et des harpons ?
+    JoyEffect: -10
+  - Dialogue:
+      Name: Will
+      Text: 
+    JoyEffect: 5
+  - Dialogue:
+      Name: Rufus
+      Text: 
+    JoyEffect: 5
+  - Dialogue:
+      Name: Lizzie
+      Text: 
+    JoyEffect: 5

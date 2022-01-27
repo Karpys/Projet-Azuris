@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Meca 1
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Lizzie
+    Text: C'est plus possible
+  - Name: Capitaine
+    Text: Qu'est ce qui ce passe ?
+  - Name: Lizzie
+    Text: Personne prend soin du Navire et on va tous y passer a cause de vous si
+      ca continue je fais route a part avec mon vaisseau
+  Reponse1: Presenter ses excuses
+  Reponse2: Mettre ses pieds sur la table pour l'ecouter
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Lizzie
+      Text: "Si tu es le seul \xE0 t'excuser et \xE0 agir on n'aura toujours pas
+        de vrai \xE9quipage"
+    JoyEffect: 0
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Lizzie
+      Text: "D\xE9gagez de mon navire"
+    JoyEffect: 0
+  - Dialogue:
+      Name: Defaite
+      Text: 
+    JoyEffect: 0

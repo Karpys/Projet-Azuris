@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Navigateur 1
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Rufus
+    Text: On ira nulle part si on continue comme ca !
+  - Name: Capitaine
+    Text: Un soucis Rufus ?
+  - Name: Rufus
+    Text: "Oui et pas qu'un peu, vu comme vous gerez nos ressources on va jamais
+      d\xE9passer la fronti\xE8re \xE0 ce rythme"
+  Reponse1: "Poser le sandwich et \xE9couter sa demande"
+  Reponse2: "Finr son sandwich sans \xE9couter"
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Rufus
+      Text: "C'est bien au moins un qui \xE9coute on va peut-etre pouvoir avancer"
+    JoyEffect: 0
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Rufus
+      Text: "Bandes de petits merdeux je r\xE9cup\xE8re mon argent et je vais me
+        trouver un \xE9quipage d\xE9cent !"
+    JoyEffect: 0
+  - Dialogue:
+      Name: Defaite
+      Text: 
+    JoyEffect: 0

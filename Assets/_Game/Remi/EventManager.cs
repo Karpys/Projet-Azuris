@@ -13,6 +13,16 @@ public class EventManager : MonoBehaviour
     public Animator AnimUi;
     public GAMESTATE State;
 
+    public int ActualDescription;
+    public Dialogue ActualDialogue;
+
+    //Event Leave//
+    public List<Events> JazzEvent;
+    public List<Events> MecaEvent;
+    public List<Events> MedecinEvent;
+    public List<Events> NavigateurEvent;
+    public List<Events> RouteDroite;
+    public List<Events> RouteGauche;
 
     //Text//
     public TMP_Text Description;
@@ -48,13 +58,14 @@ public class EventManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         State = GAMESTATE.OPEN;
         AnimUi.Play("OpenAnim");
+        ActualDescription = 0;
         if (ActualEvent < Events.Count)
         {
-
-            Description.text = LanguageSystem.TryGetTextByKey(Events[ActualEvent].EventData.Description);
-            Reponse1Text.text = LanguageSystem.TryGetTextByKey(Events[ActualEvent].EventData.Reponse1);
-            Reponse2Text.text = LanguageSystem.TryGetTextByKey(Events[ActualEvent].EventData.Reponse2);
-            SpriteCharacter.sprite = Events[ActualEvent].EventData.Character;
+            ActualDialogue = Events[ActualEvent].EventData.Description[ActualDescription];
+            Description.text = ActualDialogue.Text;
+            Reponse1Text.text = "Prochain Dialogue";
+            Reponse2Text.text = "Prochain Dialogue";
+            SpriteCharacter.sprite = FindCharacterByName(ActualDialogue.Name).Visual;
         }
         else
         {
@@ -64,25 +75,47 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    public void RefreshUI()
+    public void NextDescription(int rep)
     {
-        Description.text = LanguageSystem.TryGetTextByKey(Events[ActualEvent].EventData.Description);
-        Reponse1Text.text = LanguageSystem.TryGetTextByKey(Events[ActualEvent].EventData.Reponse1);
-        Reponse2Text.text = LanguageSystem.TryGetTextByKey(Events[ActualEvent].EventData.Reponse2);
+
+        if (ActualDescription == Events[ActualEvent].EventData.Description.Count - 1)
+        {
+            ReponseInput(rep);
+            ActualDescription += 1;
+            return;
+        }else if (ActualDescription == Events[ActualEvent].EventData.Description.Count)
+        {
+            return;
+        }
+
+        ActualDescription += 1;
+        ActualDialogue = Events[ActualEvent].EventData.Description[ActualDescription];
+        Description.text = ActualDialogue.Text;
+        SpriteCharacter.sprite = FindCharacterByName(ActualDialogue.Name).Visual;
+
+        if (ActualDescription == Events[ActualEvent].EventData.Description.Count-1)
+        {
+            Reponse1Text.text = Events[ActualEvent].EventData.Reponse1;
+            Reponse2Text.text = Events[ActualEvent].EventData.Reponse2;
+        }
+
     }
 
 
     public void ReponseInput(int Rep)
     {
-        State = GAMESTATE.CLOSE;
-        AnimUi.Play("CloseAnim");
+        
         if (Rep == 1)
         {
             for (int i = 0; i < Events[ActualEvent].EventData.ConsequenceReponse1.Count; i++)
             {
                 Consequence Cons = Events[ActualEvent].EventData.ConsequenceReponse1[i];
-                Character Perso = FindCharacterByName(Cons.Name);
+                Character Perso = FindCharacterByName(Cons.Dialogue.Name);
+                ActualDialogue = Events[ActualEvent].EventData.ConsequenceReponse1[0].Dialogue;
                 Perso.Joy += Cons.JoyEffect;
+                Description.text = ActualDialogue.Text;
+                SpriteCharacter.sprite = FindCharacterByName(ActualDialogue.Name).Visual;
+                SpecialEvent(Perso.Name);
             }
         }
         else
@@ -90,13 +123,76 @@ public class EventManager : MonoBehaviour
             for (int i = 0; i < Events[ActualEvent].EventData.ConsequenceReponse2.Count; i++)
             {
                 Consequence Cons = Events[ActualEvent].EventData.ConsequenceReponse2[i];
-                Character Perso = FindCharacterByName(Cons.Name);
+                Character Perso = FindCharacterByName(Cons.Dialogue.Name);
+                
+                ActualDialogue = Events[ActualEvent].EventData.ConsequenceReponse2[0].Dialogue;
                 Perso.Joy += Cons.JoyEffect;
+                Description.text = ActualDialogue.Text;
+                SpriteCharacter.sprite = FindCharacterByName(ActualDialogue.Name).Visual;
+                SpecialEvent(Perso.Name);
             }
         }
+        Reponse1Text.text = "";
+        Reponse2Text.text = "";
+        CheckEquipage();
+        Events.RemoveAt(0);
+        StartCoroutine(CloseEvent(1));
+    }
 
-        ActualEvent += 1;
-        StartCoroutine(LaunchEvent(2));
+    public void SpecialEvent(string name)
+    {
+        if (name == "RouteDroite")
+        {
+            AddEvent(RouteDroite);
+            RouteDroite.Clear();
+        }
+        else if (name == "RouteGauche")
+        {
+            AddEvent(RouteGauche);
+            RouteGauche.Clear();
+        }else if (name == "Defaite")
+        {
+            Debug.Log("Defaite");
+        }
+    }
+
+    public void CheckEquipage()
+    {
+        if (Characters.Characters[1].Joy <= 0)
+        {
+            AddEvent(JazzEvent);
+            JazzEvent.Clear();
+        }else if (Characters.Characters[0].Joy <= 0)
+        {
+            AddEvent(NavigateurEvent);
+            NavigateurEvent.Clear();
+        }
+        else if (Characters.Characters[3].Joy <= 0)
+        {
+            AddEvent(MecaEvent);
+            MecaEvent.Clear();
+        }
+        else if (Characters.Characters[4].Joy <= 0)
+        {
+            AddEvent(MedecinEvent);
+            MedecinEvent.Clear();
+        }
+    }
+
+    public void AddEvent(List<Events> Event)
+    {
+        foreach (Events events in Event)
+        {
+            Events.Insert(1,events);
+        }
+    }
+
+    public IEnumerator CloseEvent(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        State = GAMESTATE.CLOSE;
+        AnimUi.Play("CloseAnim");
+        StartCoroutine(LaunchEvent(delay * 1.5f));
     }
 
     public Character FindCharacterByName(string name)

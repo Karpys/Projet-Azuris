@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d647bb475ee0df4b8db459bb3ebd00c, type: 3}
+  m_Name: Event1.3
+  m_EditorClassIdentifier: 
+  Description:
+  - Name: Rufus
+    Text: "Capitaine, on a bien rev\xE9rifi\xE9 qu'on a r\xE9cup\xE9rer tout ce qu'on
+      pouvait avant de partir ?"
+  - Name: Jazz
+    Text: "J'ai d'autres choses \xE0 faire que de refaire tout l'inventaire moi."
+  - Name: Rufus
+    Text: Ce n'est pas comme si c'etait une vraie otpion
+  Reponse1: On va refaire l'inventaire
+  Reponse2: Je pense qu'on devrais pouvoir repartir sans
+  Character: {fileID: 0}
+  ConsequenceReponse1:
+  - Dialogue:
+      Name: Jazz
+      Text: Han non pas encore !!!
+    JoyEffect: -5
+  - Dialogue:
+      Name: Rufus
+      Text: 
+    JoyEffect: 10
+  - Dialogue:
+      Name: Will
+      Text: 
+    JoyEffect: -5
+  - Dialogue:
+      Name: Lizzie
+      Text: 
+    JoyEffect: -5
+  ConsequenceReponse2:
+  - Dialogue:
+      Name: Rufus
+      Text: Soit faisons comme ca si vous le dites
+    JoyEffect: -10
+  - Dialogue:
+      Name: Will
+      Text: 
+    JoyEffect: 5
+  - Dialogue:
+      Name: Jazz
+      Text: 
+    JoyEffect: 5
+  - Dialogue:
+      Name: Lizzie
+      Text: 
+    JoyEffect: 5
