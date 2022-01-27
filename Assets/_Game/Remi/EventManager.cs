@@ -11,6 +11,7 @@ public class EventManager : MonoBehaviour
     public int ActualEvent;
 
     public Animator AnimUi;
+    public float Speed;
     public GAMESTATE State;
 
     public int ActualDescription;
@@ -136,7 +137,7 @@ public class EventManager : MonoBehaviour
         Reponse2Text.text = "";
         CheckEquipage();
         Events.RemoveAt(0);
-        StartCoroutine(CloseEvent(1));
+        StartCoroutine(CloseEvent(Speed));
     }
 
     public void SpecialEvent(string name)
@@ -192,7 +193,7 @@ public class EventManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         State = GAMESTATE.CLOSE;
         AnimUi.Play("CloseAnim");
-        StartCoroutine(LaunchEvent(delay * 1.5f));
+        StartCoroutine(LaunchEvent(delay * 2));
     }
 
     public Character FindCharacterByName(string name)
