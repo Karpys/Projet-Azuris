@@ -31,6 +31,9 @@ public class EventManager : MonoBehaviour
     public TMP_Text Reponse2Text;
     public Image SpriteCharacter;
 
+    public GameObject DialogueGO;
+    public GameObject ReponsesGO;
+
     public void Start()
     {
         State = GAMESTATE.OPEN;
@@ -59,14 +62,16 @@ public class EventManager : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         State = GAMESTATE.OPEN;
+        DialogueGO.SetActive(true);
+        ReponsesGO.SetActive(true);
         AnimUi.Play("OpenAnim");
         ActualDescription = 0;
         if (ActualEvent < Events.Count)
         {
             ActualDialogue = Events[ActualEvent].EventData.Description[ActualDescription];
-            Description.text = ActualDialogue.Text;
-            Reponse1Text.text = "Prochain Dialogue";
-            Reponse2Text.text = "Prochain Dialogue";
+            Description.text = LanguageSystem.TryGetTextByKey(ActualDialogue.Text);
+            Reponse1Text.text = LanguageSystem.TryGetTextByKey("button.next");
+            Reponse2Text.text = LanguageSystem.TryGetTextByKey("button.next");
             SpriteCharacter.sprite = FindCharacterByName(ActualDialogue.Name).Visual;
         }
         else
@@ -92,13 +97,13 @@ public class EventManager : MonoBehaviour
 
         ActualDescription += 1;
         ActualDialogue = Events[ActualEvent].EventData.Description[ActualDescription];
-        Description.text = ActualDialogue.Text;
+        Description.text = LanguageSystem.TryGetTextByKey(ActualDialogue.Text);
         SpriteCharacter.sprite = FindCharacterByName(ActualDialogue.Name).Visual;
 
         if (ActualDescription == Events[ActualEvent].EventData.Description.Count-1)
         {
-            Reponse1Text.text = Events[ActualEvent].EventData.Reponse1;
-            Reponse2Text.text = Events[ActualEvent].EventData.Reponse2;
+            Reponse1Text.text = LanguageSystem.TryGetTextByKey(Events[ActualEvent].EventData.Reponse1);
+            Reponse2Text.text = LanguageSystem.TryGetTextByKey(Events[ActualEvent].EventData.Reponse2);
         }
 
     }
@@ -115,7 +120,7 @@ public class EventManager : MonoBehaviour
                 Character Perso = FindCharacterByName(Cons.Dialogue.Name);
                 ActualDialogue = Events[ActualEvent].EventData.ConsequenceReponse1[0].Dialogue;
                 Perso.Joy += Cons.JoyEffect;
-                Description.text = ActualDialogue.Text;
+                Description.text = LanguageSystem.TryGetTextByKey(ActualDialogue.Text);
                 SpriteCharacter.sprite = FindCharacterByName(ActualDialogue.Name).Visual;
                 SpecialEvent(Perso.Name);
             }
@@ -129,7 +134,7 @@ public class EventManager : MonoBehaviour
                 
                 ActualDialogue = Events[ActualEvent].EventData.ConsequenceReponse2[0].Dialogue;
                 Perso.Joy += Cons.JoyEffect;
-                Description.text = ActualDialogue.Text;
+                Description.text = LanguageSystem.TryGetTextByKey(ActualDialogue.Text);
                 SpriteCharacter.sprite = FindCharacterByName(ActualDialogue.Name).Visual;
                 SpecialEvent(Perso.Name);
             }
@@ -197,7 +202,8 @@ public class EventManager : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         State = GAMESTATE.CLOSE;
-        AnimUi.Play("CloseAnim");
+        DialogueGO.SetActive(false);
+        ReponsesGO.SetActive(false);
         StartCoroutine(LaunchEvent(delay * 2));
     }
 

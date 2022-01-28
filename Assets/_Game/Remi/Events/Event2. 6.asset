@@ -14,20 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Jazz
-    Text: "D'apres ce qu'on sait il y a une cr\xE9ature l\xE9gendaire qui est cach\xE9
-      dans la mer de nuage pr\xE8s d'ici"
+    Text: Event12.dialogue.1
   - Name: Will
-    Text: "Mais tu veux affronter une telle cr\xE9ature avec aussi peu de personnes
-      et d'armes ????"
+    Text: Event12.dialogue.2
   - Name: Jazz
-    Text: "Bah Alors ? On a peur du grand m\xE9chant monstre ?"
-  Reponse1: Ressurer Will
-  Reponse2: Jouer le jeu de Jazz
+    Text: Event12.question
+  Reponse1: Event12.choix.1
+  Reponse2: Event12.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Jazz
-      Text: Vous n'etes pas drole capitaine, vous cassez l'ambiance
+      Text: Event12.reponse.1
     JoyEffect: -5
   - Dialogue:
       Name: Will
@@ -36,7 +34,7 @@ MonoBehaviour:
   ConsequenceReponse2:
   - Dialogue:
       Name: Will
-      Text: Arretez de vous moquer de moi vous deux
+      Text: Event12.reponse.2
     JoyEffect: -10
   - Dialogue:
       Name: Jazz

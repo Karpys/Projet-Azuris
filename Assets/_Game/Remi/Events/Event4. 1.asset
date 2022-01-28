@@ -14,27 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Capitaine
-    Text: "Quelques heures plus tard apr\xE8s la fuite"
+    Text: Event22.dialogue.1
   - Name: Capitaine
-    Text: "Jazz est mort en h\xE9ros comme il le souhaite et surement en gardant
-      son sourire idiot tout du long je parle"
+    Text: Event22.dialogue.2
   - Name: Lizzie
-    Text: "C'etait peut etre un idiot fini mais il m\xE9ritait mieux que de mourir
-      en sacrifice pour nous"
+    Text: Event22.dialogue.3
   - Name: Rufus
-    Text: La vie est vraiment fragile, meme pour un jeunot comme lui faut croire
+    Text: Event22.dialogue.4
   - Name: Will
-    Text: Si seulement ce monde n'etait pas si pourri il serait encore parmi nous
+    Text: Event22.dialogue.5
   - Name: Capitaine
-    Text: On devrais surement s'arreter un instant
-  Reponse1: Prendre le temps de creuser une tombe
-  Reponse2: Reprendre la route rapidement
+    Text: Event22.question
+  Reponse1: Event22.choix.1
+  Reponse2: Event22.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Capitaine
-      Text: "Il n'aurait surement pas voulu nous voir larmoyant mais il ne sera pas
-        oubli\xE9  au moins"
+      Text: Event22.reponse.1
     JoyEffect: 0
   - Dialogue:
       Name: Lizzie
@@ -51,8 +48,7 @@ MonoBehaviour:
   ConsequenceReponse2:
   - Dialogue:
       Name: Rufus
-      Text: "Personne ne m\xE9rit\xE9 de partir sans qu'on se souvienne de lui et
-        c'est inhumain de faire aucun geste"
+      Text: Event22.reponse.2
     JoyEffect: 0
   - Dialogue:
       Name: Lizzie

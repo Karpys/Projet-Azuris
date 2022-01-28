@@ -14,26 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Capitaine
-    Text: Soudainement Jazz sauta avec force sur un des dirigeables ennemis
+    Text: Event21.dialogue.1
   - Name: Capitaine
-    Text: "D\xE9capitant avec force un des soldates blondes, ce qui rendit les soldats
-      effray\xE9 et faibles face \xE0 la bete qu'\xE9tait Jazz au combat"
+    Text: Event21.dialogue.2
   - Name: Capitaine
-    Text: Quelque minutes plus tard le Navire perdait de vue Jazz qui venait de les
-      sauver en se sacrifiant
+    Text: Event21.dialogue.3
   - Name: Capitaine
-    Text: Soudainement une explosion survient au centre de tout les navires qui enterrait
-      tout espoir de revoir Jazz vivant au Sein du groupe
+    Text: Event21.dialogue.4
   Reponse1: ...
   Reponse2: ...
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Capitaine
-      Text: "\"Ce fut marrant d'etre avec vous malgr\xE9 tout\""
+      Text: Event20.reponse.1
     JoyEffect: 0
   ConsequenceReponse2:
   - Dialogue:
       Name: Capitaine
-      Text: "\"Ce fut marrant d'etre avec vous malgr\xE9 tout\""
+      Text: Event20.reponse.1
     JoyEffect: -5

@@ -14,26 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Lizzie
-    Text: Mais du coup que va tu changer de plus ?
+    Text: Mecanicien2.dialogue.1
   - Name: Capitaine
-    Text: Tu aimerais qu'on mettre quoi en place pour etre plus respectueux
+    Text: Mecanicien2.dialogue.2
   - Name: Lizzie
-    Text: "Chaque personne doit s'atteler aux taches de nettoyage et d'entretient
-      basique du navire et toute personne qui casse quelque chose le r\xE9pare imm\xE9diatement
-      sans attendre"
-  Reponse1: "Obliger l'\xE9quipage \xE0 suivre ses demandes"
-  Reponse2: Lui proposer une promotion
+    Text: Mecanicien2.question
+  Reponse1: Mecanicien2.choix.1
+  Reponse2: Mecanicien2.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Lizzie
-      Text: "Si le navire \xE0 nouveau en mauvais \xE9tat \xE0 cause de vous c'est
-        fini"
+      Text: Mecanicien2.reponse.1
     JoyEffect: 90
   ConsequenceReponse2:
   - Dialogue:
       Name: Lizzie
-      Text: Quittez le navire je nous fais tous sauter !
+      Text: Mecanicien2.reponse.2
     JoyEffect: 0
   - Dialogue:
       Name: Defaite

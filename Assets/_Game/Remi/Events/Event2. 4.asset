@@ -14,19 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Rufus
-    Text: Village en vue
+    Text: Event10.dialogue.1
   - Name: Capitaine
-    Text: Visiblement on est assez loin de la capitale les infos concernant notre
-      situation n'est pas connue de tous ici
+    Text: Event10.dialogue.2
   - Name: Capitaine
-    Text: "Utilisons se r\xE9pit pour se reposer et profiter un peu"
-  Reponse1: "Explorer le march\xE9"
-  Reponse2: Explorer les quais
+    Text: Event10.question
+  Reponse1: Event10.choix.1
+  Reponse2: Event10.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Will
-      Text: Wow regarde Rufus il y a pleins de choix on ferait mieux d'en profiter
+      Text: Event10.reponse.1
     JoyEffect: 10
   - Dialogue:
       Name: Rufus
@@ -35,8 +34,7 @@ MonoBehaviour:
   ConsequenceReponse2:
   - Dialogue:
       Name: Lizzie
-      Text: "Regarde Jazz tous les navires pr\xE9sent on devrait pouvoir rafistoler
-        le notre en achetant des pi\xE8ces"
+      Text: Event10.reponse.2
     JoyEffect: 10
   - Dialogue:
       Name: Jazz

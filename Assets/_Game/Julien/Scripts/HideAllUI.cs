@@ -16,6 +16,6 @@ public class HideAllUI : MonoBehaviour
             toHide[i].SetActive(toggle);
         }
 
-        text.text = toggle ? "Piloter" : "Dialogue";
+        text.text = toggle ? LanguageSystem.TryGetTextByKey("button.drive") : LanguageSystem.TryGetTextByKey("button.dialogue");
     }
 }

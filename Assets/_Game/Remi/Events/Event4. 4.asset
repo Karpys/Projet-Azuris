@@ -14,25 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Lizzie
-    Text: "Nous y voila, apr\xE8s tout ce temps"
+    Text: Event25.dialogue.1
   - Name: Rufus
-    Text: "Tout n'aura pas \xE9t\xE9 de tout repos pour ma pauvre carrure"
+    Text: Event25.dialogue.2
   - Name: Will
-    Text: On a fini par le faire et il ne reste plus qu'a tout reconstruire
+    Text: Event25.dialogue.3
   - Name: Capitaine
-    Text: Je vous propose de trinquer une bonne fois pour toute pour mettre fin a
-      ce chapitre de nos vies
-  Reponse1: Trinquer avec 5 coupes
-  Reponse2: Trinquer avec 4 coupes
+    Text: Event25.question
+  Reponse1: Event25.choix.1
+  Reponse2: Event25.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Rufus
-      Text: "De cette mani\xE8re tout le monde est concern\xE9 pas vrai ?"
+      Text: Event25.reponse.1
     JoyEffect: 30
   - Dialogue:
       Name: Lizzie
-      Text: "De cette mani\xE8re tout le monde est concern\xE9 pas vrai ?"
+      Text: Event25.reponse.1
     JoyEffect: 30
   - Dialogue:
       Name: Will
@@ -41,7 +40,7 @@ MonoBehaviour:
   ConsequenceReponse2:
   - Dialogue:
       Name: Lizzie
-      Text: Le faire comme ca me donne l'impression d'oublier quelque chose
+      Text: Event25.reponse.2
     JoyEffect: -10
   - Dialogue:
       Name: Rufus

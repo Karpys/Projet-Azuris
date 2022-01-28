@@ -14,23 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Capitaine
-    Text: "On commence \xE0 r\xE9duire leurs nombres"
+    Text: Event16.dialogue.1
   - Name: Jazz
-    Text: On a pu un peu reprendre de la distance ce combat s'annonce bien
+    Text: Event16.dialogue.2
   - Name: Rufus
-    Text: "N\xE9anmoins dans le doute va falloir qu'on sacrifie des ressources du
-      navire pour l'all\xE9ger et confirmer notre fuite"
-  Reponse1: Abandonner tout le stock de vivre
-  Reponse2: "Abandonner tout les outils et m\xE9taux"
+    Text: Event16.question
+  Reponse1: Event16.choix.1
+  Reponse2: Event16.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Will
-      Text: "C'est vraiment triste de devoir abandonner autant de chose et retourner
-        \xE0 la cuisine de Jazz"
+      Text: Event16.reponse.1
     JoyEffect: -5
   ConsequenceReponse2:
   - Dialogue:
       Name: Lizzie
-      Text: "Devoir abandonner tout mon mat\xE9riel comme ca c'est horrible"
+      Text: Event16.reponse.2
     JoyEffect: -5

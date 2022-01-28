@@ -14,22 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Jazz
-    Text: "Capitaine !! Une arm\xE9e de dirigeable de l'empire est derri\xE8re nous
-      !!"
+    Text: Event13.dialogue.1
   - Name: Capitaine
-    Text: "Fini de jouer il va falloir qu'on soit fort pour s'en sortir, Tout le
-      monde \xE0 son poste !"
+    Text: Event13.dialogue.2
   - Name: Lizzie
-    Text: "On peut fuir ou les affronter mais dans tout les cas je ne sais pas si
-      le navire \xE0 la puissance n\xE9cessaire pour faire l'un ou l'autre sans sacrifice
-      !"
-  Reponse1: Essayer de les affronter
-  Reponse2: Fuir la flotte de navire
+    Text: Event13.question
+  Reponse1: Event13.choix.1
+  Reponse2: Event13.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Jazz
-      Text: Vous etes aussi fou que moi mais c'est bien notre seule chance
+      Text: Event13.reponse.1
     JoyEffect: 0
   - Dialogue:
       Name: RouteDroite
@@ -38,7 +34,7 @@ MonoBehaviour:
   ConsequenceReponse2:
   - Dialogue:
       Name: Lizzie
-      Text: Moteur pleines vapeur en priant pour que ca casse pas
+      Text: Event13.reponse.2
     JoyEffect: 0
   - Dialogue:
       Name: RouteGauche

@@ -14,22 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Capitaine
-    Text: Encore plus de dirigeables sont apparus
+    Text: Event20.dialogue.1
   - Name: Jazz
-    Text: "C'est comme ca apr\xE8s tout, bon ce sera court comme adieux mais penser
-      \xE0 ch\xE9rir mes troph\xE9es et \xE0 leurs faire prendre de la valeur"
+    Text: Event20.dialogue.2
   - Name: Capitaine
-    Text: Pas question de te laisser y aller ce n'est pas encore fini
-  Reponse1: Rattraper Jazz
-  Reponse2: Rattraper Jazz
+    Text: Event20.question
+  Reponse1: Event20.choix.1
+  Reponse2: Event20.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Jazz
-      Text: "Ce fut marrant d'etre avec vous malgr\xE9 tout"
+      Text: Event20.reponse.1
     JoyEffect: 0
   ConsequenceReponse2:
   - Dialogue:
       Name: Jazz
-      Text: "Ce fut marrant d'etre avec vous malgr\xE9 tout"
+      Text: Event20.reponse.2
     JoyEffect: -5

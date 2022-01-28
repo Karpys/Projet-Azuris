@@ -14,23 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Rufus
-    Text: "Dirigeable inconnu \xE0 port\xE9e"
+    Text: Event9.dialogue.1
   - Name: Will
-    Text: C'est une dirigeable marchand on ferait mieux de refaire le plein de marchandises
+    Text: Event9.dialogue.2
   - Name: Capitaine
-    Text: Refaire le plein de munitions et armes ou de vivres serait pas mal
-  Reponse1: "Choisir l'\xE9quipement"
-  Reponse2: Choisir les vivres
+    Text: Event9.question
+  Reponse1: Event9.choix.1
+  Reponse2: Event9.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Jazz
-      Text: "Enfin du renouveau dans notre \xE9quipement"
+      Text: Event9.reponse.1
     JoyEffect: 10
   ConsequenceReponse2:
   - Dialogue:
       Name: Will
-      Text: Enfin autre chose que la meme viande en boucle
+      Text: Event9.reponse.2
     JoyEffect: 5
   - Dialogue:
       Name: Jazz

@@ -14,25 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Jazz
-    Text: "D'accord tu veux mettre en avant mes choix mais concr\xE8tement ca changera
-      quoi ?"
+    Text: Baroudeur2.dialogue.1
   - Name: Capitaine
-    Text: Tu as beau etre un sauvage dans l'ame tu sais ce que tu fais quand tu te
-      bat
+    Text: Baroudeur2.dialogue.2
   - Name: Jazz
-    Text: Je te suis jusque-la mais ou veut tu en venir
-  Reponse1: "Te laisser \xE9tablir la strat\xE9gie au combat"
-  Reponse2: Soit mon bras droit et suit mes ordres
+    Text: Baroudeur2.question
+  Reponse1: Baroudeur2.choix.1
+  Reponse2: Baroudeur2.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Jazz
-      Text: "Ca me va mais la prochaine fois je me casse sans pr\xE9venir"
+      Text: Baroudeur2.reponse.1
     JoyEffect: 90
   ConsequenceReponse2:
   - Dialogue:
       Name: Jazz
-      Text: Trouve quelqu'un d'autre d'assez fou pour te suivre moi je t'abandonne
+      Text: Baroudeur2.reponse.2
     JoyEffect: 0
   - Dialogue:
       Name: Defaite

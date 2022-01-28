@@ -14,25 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Capitaine
-    Text: "On devrais avoir un petit temps de r\xE9pit."
+    Text: Event18.dialogue.1
   - Name: Lizzie
-    Text: "Le fait d\u2019avoir mis a pleine puissance les moteurs les a fait l\xE2cher
-      il faut qu\u2019on s\u2019en occupe maintenant !"
+    Text: Event18.dialogue.2
   - Name: Rufus
-    Text: "On devrais pouvoir effectuer les r\xE9parations en utilisant les ressources
-      du navire."
-  Reponse1: "utiliser la collection de tr\xE9sors de Jazz"
-  Reponse2: "utiliser le mat\xE9riel de recherche de Will"
+    Text: Event18.question
+  Reponse1: Event18.choix.1
+  Reponse2: Event18.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Jazz
-      Text: "H\xE9 ho vous pensez faire quoi la m\xEAme en situation de crise c\u2019est
-        scandaleux."
+      Text: Event18.reponse.1
     JoyEffect: -5
   ConsequenceReponse2:
   - Dialogue:
       Name: Will
-      Text: "Mon mat\xE9riel est plus pr\xE9cieux que ma vie vous ne pouvez pas me
-        faire \xE7a."
+      Text: Event18.reponse.2
     JoyEffect: -10

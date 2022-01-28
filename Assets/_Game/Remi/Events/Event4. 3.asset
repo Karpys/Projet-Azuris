@@ -14,23 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Capitaine
-    Text: On approche bientot de la limite du territoire de l'Empire
+    Text: Event24.dialogue.1
   - Name: Will
-    Text: Bientot la fin de ce voyage alors
+    Text: Event24.dialogue.2
   - Name: Capitaine
-    Text: Une fin pour cette aventure mais la renaissance de nos vies ensuite une
-      fois sortis de ce merdier
-  Reponse1: "Consigner tout le p\xE9riple dans un carnet"
-  Reponse2: Laisser le vent se rappeler du voyager pour nous
+    Text: Event24.question
+  Reponse1: Event24.choix.1
+  Reponse2: Event24.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Will
-      Text: Consigner tout ca dans un journal permettrait d'en faire une superbe
-        histoire par la suite
+      Text: Event24.reponse.1
     JoyEffect: 10
   ConsequenceReponse2:
   - Dialogue:
       Name: Lizzie
-      Text: "C'est surement ce qu'aurait fait cet idiot apr\xE8s tout"
+      Text: Event24.reponse.2
     JoyEffect: 10

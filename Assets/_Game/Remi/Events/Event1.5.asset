@@ -14,24 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Will
-    Text: "Capitaine, on voit un Narval c\xE9leste \xE0 travers les nuages !"
+    Text: Event5.dialogue.1
   - Name: Capitaine
-    Text: Et c'est rare ?
+    Text: Event5.dialogue.2
   - Name: Will
-    Text: "Plus que rare meme ! Ils ont quasiment tous disparus de cette r\xE9gion
-      quand la guerre avait commenc\xE9 il y a 10 ans, c'est un sp\xE9cimen rare
-      \xE0 observer"
+    Text: Event5.dialogue.3
   - Name: Lizzie
-    Text: "A observer de loin. A la moidre fausse manipulation on finira tous par
-      mourir \xE9cras\xE9s ou mang\xE9s par quelque chose sous la mer"
-  Reponse1: Se rapprocher prudemment
-  Reponse2: Ne prendre aucun risque
+    Text: Event5.question
+  Reponse1: Event5.choix.1
+  Reponse2: Event5.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Will
-      Text: "Merci beaucoup je vais pouvoir r\xE9cup\xE9rer un \xE9chantillon pour
-        fabriquer des rem\xE8des"
+      Text: Event5.reponse.1
     JoyEffect: 10
   - Dialogue:
       Name: Lizzie
@@ -40,8 +36,7 @@ MonoBehaviour:
   ConsequenceReponse2:
   - Dialogue:
       Name: Lizzie
-      Text: Jamais je ne laisserais mon beau navire etre mis en danger pour si peu
-        retiens bien
+      Text: Event5.reponse.2
     JoyEffect: 10
   - Dialogue:
       Name: Will

@@ -14,20 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Capitaine
-    Text: Personne ne sait qu'on est en fuite on ferait mieux d'en profiter pour
-      chercher des infos
+    Text: Event11.dialogue.1
   - Name: Will
-    Text: Il faudrait qu'on puisse trouver une route sure pour la suite
+    Text: Event11.dialogue.2
   - Name: Lizzie
-    Text: "Je pense surtout qu'il faudrait am\xE9liorer l'etat de notre vaisseau
-      dans l'im\xE9diat"
-  Reponse1: Ecouter Will
-  Reponse2: Ecouter Lizzie
+    Text: Event11.question
+  Reponse1: Event11.choix.1
+  Reponse2: Event11.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Will
-      Text: C'est moins dangereux de connaitre notre route
+      Text: Event11.reponse.1
     JoyEffect: 10
   - Dialogue:
       Name: Lizzie
@@ -36,7 +34,7 @@ MonoBehaviour:
   ConsequenceReponse2:
   - Dialogue:
       Name: Lizzie
-      Text: "Renforcer le vaisseau maintenant c'\xE9tait le mieux a faire"
+      Text: Event11.reponse.2
     JoyEffect: 10
   - Dialogue:
       Name: Will

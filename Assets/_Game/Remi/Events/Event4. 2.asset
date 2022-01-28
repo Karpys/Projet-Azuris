@@ -14,22 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Capitaine
-    Text: "On ferait mieux de faire le plein d'armes et de munition par pr\xE9caution"
+    Text: Event23.dialogue.1
   - Name: Lizzie
-    Text: "C'etait le seul \xE0 etre comp\xE9tant avec ce genre de chose"
+    Text: Event23.dialogue.2
   - Name: Capitaine
-    Text: "On ne peut qu'avancer en essayant de survivre comme on l'a fait depuis
-      le d\xE9but"
+    Text: Event23.dialogue.3
   - Name: Rufus
-    Text: "Il faudrait un bon paquetage d'arme pour s'entrainer et choisir une arme
-      en m\xE9moire de Jazz"
-  Reponse1: "Choisir un fusil de pr\xE9cision"
-  Reponse2: Choisir un pistolet mitrailleur
+    Text: Event23.question
+  Reponse1: Event23.choix.1
+  Reponse2: Event23.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Capitaine
-      Text: Cette ne lui va pas du tout mais on fera avec
+      Text: Event23.reponse.1
     JoyEffect: 0
   - Dialogue:
       Name: Lizzie
@@ -38,5 +36,5 @@ MonoBehaviour:
   ConsequenceReponse2:
   - Dialogue:
       Name: Lizzie
-      Text: C'etait vraiment ce genre d'arme qu'il affectionnait
+      Text: Event23.reponse.2
     JoyEffect: 10

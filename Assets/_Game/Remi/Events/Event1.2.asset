@@ -14,22 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Will
-    Text: "Capitaine, j'ai trouv\xE9 un Loup ail\xE9 bless\xE9 \xE0 cot\xE9 d'un
-      buisson, je peux utiliser le mat\xE9riel qu'on a pour le soigner ?"
+    Text: Event2.dialogue.1
   - Name: Rufus
-    Text: "Tu crois qu'on a du mat\xE9riel m\xE9dical en quantit\xE9 hein?"
+    Text: Event2.dialogue.2
   - Name: Rufus
-    Text: "ce serait bien d'\xE9conomiser ce qu'on a en cas de soucis, comment tu
-      va soigner l'autre sauvage de Jazz si tu d\xE9pense tout comme ca ?"
+    Text: Event2.dialogue.3
   - Name: Will
-    Text: Mais on ne peut pas le laisser comme ca
-  Reponse1: Soignons le ca devrais aller
-  Reponse2: Economisons nos ressources pour cette fois
+    Text: Event2.question
+  Reponse1: Event2.choix.1
+  Reponse2: Event2.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Will
-      Text: Merci Capitaine !
+      Text: Event2.reponse.1
     JoyEffect: 10
   - Dialogue:
       Name: Rufus
@@ -38,9 +36,9 @@ MonoBehaviour:
   ConsequenceReponse2:
   - Dialogue:
       Name: Will
-      Text: Arf mais doit bien y avoir quelque chose que l'on peut faire
+      Text: Event2.reponse.2
     JoyEffect: -10
   - Dialogue:
       Name: Rufus
-      Text: "Je vais enfin pouvoir r\xE9parer mon navire ch\xE9ri"
+      Text: 
     JoyEffect: 10

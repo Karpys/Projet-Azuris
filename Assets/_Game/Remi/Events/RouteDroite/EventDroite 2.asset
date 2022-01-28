@@ -14,22 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Lizzie
-    Text: Ils sont beaucoup trop nombreux !
+    Text: Event15.dialogue.1
   - Name: Captaine
-    Text: "Il va falloir qu'on se concentre sur un endroit \xE0 detruire"
+    Text: Event15.dialogue.2
   - Name: Lizzie
-    Text: "Qu'auraient cibl\xE9s les autres pour d\xE9truire un navire rapidement
-      !"
-  Reponse1: "Penser comme Jazz et d\xE9truire les armes"
-  Reponse2: "Penser comme Rufus et d\xE9truire les moteurs"
+    Text: Event15.question
+  Reponse1: Event15.choix.1
+  Reponse2: Event15.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Jazz
-      Text: Pas d'armes, pas de danger
+      Text: Event15.reponse.1
     JoyEffect: 5
   ConsequenceReponse2:
   - Dialogue:
       Name: Rufus
-      Text: Si ils ne peuvent plus bouger ils ne sont plus une menace
+      Text: Event15.reponse.2
     JoyEffect: 5

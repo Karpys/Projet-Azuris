@@ -14,19 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Rufus
-    Text: "Capitaine, on a bien rev\xE9rifi\xE9 qu'on a r\xE9cup\xE9rer tout ce qu'on
-      pouvait avant de partir ?"
+    Text: Event3.dialogue.1
   - Name: Jazz
-    Text: "J'ai d'autres choses \xE0 faire que de refaire tout l'inventaire moi."
+    Text: Event3.dialogue.2
   - Name: Rufus
-    Text: Ce n'est pas comme si c'etait une vraie otpion
-  Reponse1: On va refaire l'inventaire
-  Reponse2: Je pense qu'on devrais pouvoir repartir sans
+    Text: Event3.question
+  Reponse1: Event3.choix.1
+  Reponse2: Event3.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Jazz
-      Text: Han non pas encore !!!
+      Text: Event3.reponse.1
     JoyEffect: -5
   - Dialogue:
       Name: Rufus
@@ -43,7 +42,7 @@ MonoBehaviour:
   ConsequenceReponse2:
   - Dialogue:
       Name: Rufus
-      Text: Soit faisons comme ca si vous le dites
+      Text: Event3.reponse.2
     JoyEffect: -10
   - Dialogue:
       Name: Will

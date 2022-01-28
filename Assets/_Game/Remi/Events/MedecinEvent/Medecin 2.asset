@@ -14,25 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Will
-    Text: "Le prochain qui ne suit pas mes indications a la lettre pour etre remis
-      sur pied pour aller se d\xE9brouiller seul"
+    Text: Medecin2.dialogue.1
   - Name: Capitaine
-    Text: Si on survit c'est que tout va bien nan ?
+    Text: Medecin2.dialogue.2
   - Name: Will
-    Text: Nan vous pouvez mourir pourir un rien et j'ai besoin de gens pour avancer
-      alors soit vous suivez mes indications soit je pars
-  Reponse1: Mettre en place une salle close pour les soins
-  Reponse2: Retirer la croute de Jazz au couteau
+    Text: Medecin2.question
+  Reponse1: Medecin2.choix.1
+  Reponse2: Medecin2.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Will
-      Text: "C'est correct comme choix au moins vous ne fuirez plus tr\xE8s loin"
+      Text: Medecin2.reponse.1
     JoyEffect: 90
   ConsequenceReponse2:
   - Dialogue:
       Name: Will
-      Text: C'est fini pour vous je vous abandonne
+      Text: Medecin2.reponse.2
     JoyEffect: 0
   - Dialogue:
       Name: Defaite

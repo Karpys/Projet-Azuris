@@ -14,24 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Will
-    Text: C'est fini j'abandonne
+    Text: Medecin1.dialogue.1
   - Name: Capitaine
-    Text: Tout va bien ?
+    Text: Medecin1.dialogue.2
   - Name: Will
-    Text: "Non rien ne va, personne ne tient jamais compte de mes recommandations
-      et ils ne gu\xE9rissent jamais et si personne ne se bat c'est fini"
-  Reponse1: "Appeler les autres et les forcer \xE0 \xE9couter"
-  Reponse2: "Jouer avec le pansement de ma derni\xE8re blessure"
+    Text: Medecin1.question
+  Reponse1: Medecin1.choix.1
+  Reponse2: Medecin1.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Will
-      Text: "Si tout le monde m\xE9coute au moins une fois on pourra s'en sortir"
+      Text: Medecin1.reponse.1
     JoyEffect: 0
   ConsequenceReponse2:
   - Dialogue:
       Name: Will
-      Text: J'abandonne vraiment, c'est impossible de soigner des cadavres sur pattes
+      Text: Medecin1.reponse.2
     JoyEffect: 0
   - Dialogue:
       Name: Defaite

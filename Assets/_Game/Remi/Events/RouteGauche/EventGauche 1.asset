@@ -14,19 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Lizzie
-    Text: "On commence \xE0 les semer mais \xE7a ne durera pas."
+    Text: Event17.dialogue.1
   - Name: Capitaine
-    Text: "Y a-t-il quelque chose que l\u2019on peut faire ?"
+    Text: Event17.dialogue.2
   - Name: Will
-    Text: "Et si on effectuait des tirs longue distance pour les semer petit \xE0
-      petit ?"
-  Reponse1: "Tirer une salve d\u2019obus per\xE7ants"
-  Reponse2: "Tirer une salve de fumig\xE8ne"
+    Text: Event17.question
+  Reponse1: Event17.choix.1
+  Reponse2: Event17.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Jazz
-      Text: "Tu es plut\xF4t bourrin dans ton genre sans le montrer."
+      Text: Event17.reponse.1
     JoyEffect: 5
   - Dialogue:
       Name: Will
@@ -35,7 +34,7 @@ MonoBehaviour:
   ConsequenceReponse2:
   - Dialogue:
       Name: Rufus
-      Text: "Les fumig\xE8nes seront efficaces pour foutre la pagaille vu leurs nombres."
+      Text: Event17.reponse.2
     JoyEffect: 5
   - Dialogue:
       Name: Will

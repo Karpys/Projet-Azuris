@@ -14,25 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Capitaine
-    Text: "Tant qu'on est arret\xE9 l\xE0 on ferait mieux d'aller envoyer quelqu'un
-      r\xE9cup\xE9rer un peu d'acier on en manque cruellement"
+    Text: Event7.dialogue.1
   - Name: Will
-    Text: Personne n'a envie de s'y coller on est d'accord
+    Text: Event7.dialogue.2
   - Name: Capitaine
-    Text: "S'y personne ne s'y colle on va perdre du temps et des potentielles ressources
-      alors je vais d\xE9signer hein"
-  Reponse1: Choisir Jazz pour aller miner
-  Reponse2: Choisir Will pour aller miner
+    Text: Event7.question
+  Reponse1: Event7.choix.1
+  Reponse2: Event7.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Jazz
-      Text: Toujours moi qu'on choisit quand faut taper comme une brute c'est chiant
+      Text: Event7.reponse.1
     JoyEffect: -10
   ConsequenceReponse2:
   - Dialogue:
       Name: Will
-      Text: Vous pensez vraiment qu'avec ma carrure je vais y arriver
+      Text: Event7.reponse.2
     JoyEffect: -10
   - Dialogue:
       Name: Rufus

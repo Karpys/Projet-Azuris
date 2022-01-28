@@ -14,26 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Rufus
-    Text: Terre en vue !!!
+    Text: Event1.dialogue.1
   - Name: Capitaine
-    Text: Il semblerait que ce soit une ile sans vie humaine apparente, on devrait
-      s'y arreter pour refaire le plein de ressources
+    Text: Event1.dialogue.2
   - Name: Jazz
-    Text: Haha, une bonne occasion de chasser sur la terre ferme.
+    Text: Event1.dialogue.3
   - Name: Lizzie
-    Text: "Surtout une occasion pour moi de r\xE9parer tes d\xE9gats sur le navire."
+    Text: Event1.dialogue.4
   - Name: Capitaine
-    Text: Il vaudrait mieux laisser quelqu'un surveiller le vaisseau
-  Reponse1: Jazz tu surveille le vaisseau
-  Reponse2: Lizzie tu reste au vaisseau
+    Text: Event1.question
+  Reponse1: Event1.choix.1
+  Reponse2: Event1.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Jazz
-      Text: "AH j'ai vraiment horreur de rester l\xE0 \xE0 rien faire"
+      Text: Event1.reponse.1
     JoyEffect: -10
   ConsequenceReponse2:
   - Dialogue:
       Name: Lizzie
-      Text: "Je vais enfin pouvoir r\xE9parer mon navire ch\xE9ri"
+      Text: Event1.reponse.2
     JoyEffect: 10

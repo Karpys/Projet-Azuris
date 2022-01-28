@@ -14,20 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Jazz
-    Text: Regardez, un banc de sardines volantes !!
+    Text: Event4.dialogue.1
   - Name: Jazz
-    Text: Laissez-moi essayer de les pecher on aura du poisson pour un moment avec
-      mes talents de chasseur
+    Text: Event4.dialogue.2
   - Name: Will
-    Text: "Tu fais tellement de bruit quand tu chasses ou peches que tu vas juste
-      d\xE9ranger tout le monde"
-  Reponse1: Laisse le pecher
-  Reponse2: Cache les harpons et les filets
+    Text: Event4.question
+  Reponse1: Event4.choix.1
+  Reponse2: Event4.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Jazz
-      Text: C'est parti !!!
+      Text: Event4.reponse.1
     JoyEffect: 10
   - Dialogue:
       Name: Rufus
@@ -44,7 +42,7 @@ MonoBehaviour:
   ConsequenceReponse2:
   - Dialogue:
       Name: Jazz
-      Text: Pourquoi il y a plus aucune trace des filets et des harpons ?
+      Text: Event4.reponse.2
     JoyEffect: -10
   - Dialogue:
       Name: Will

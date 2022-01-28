@@ -14,25 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Rufus
-    Text: Si tu veux me garder moi et mes avantages sur ton navire va falloir faire
-      des concessions gamin !
+    Text: Navigateur2.dialogue.1
   - Name: Capitaine
-    Text: Je t'ecoute
+    Text: Navigateur2.dialogue.2
   - Name: Rufus
-    Text: "Arreter de depenser toutes les ressources du navire sans penser \xE0 l'apr\xE8s
-      vous allez nous ruiner et on pourra plus avancer"
-  Reponse1: "Proposer de mettre en place un inventaire r\xE9gulier"
-  Reponse2: Taper un plongeon dans le coffre d'or
+    Text: Navigateur2.question
+  Reponse1: Navigateur2.choix.1
+  Reponse2: Navigateur2.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Rufus
-      Text: "C'est un bon d\xE9but on verra ou tu arriveras \xE0 les amener avec"
+      Text: Navigateur2.reponse.1
     JoyEffect: 90
   ConsequenceReponse2:
   - Dialogue:
       Name: Rufus
-      Text: Sort de mon Or ou t'es mort !
+      Text: Navigateur2.reponse.2
     JoyEffect: 0
   - Dialogue:
       Name: Defaite

@@ -14,25 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Lizzie
-    Text: "Capitaine, je pense qu'on va avoir un probl\xE8me avec un des moteurs"
+    Text: Event6.dialogue.1
   - Name: Capitaine
-    Text: Ca implique quoi ?
+    Text: Event6.dialogue.2
   - Name: Lizzie
-    Text: "Si on le laisse comme ca on va perdre le moteur, je peux le r\xE9parer
-      avec ce que j'ai mais si j'ai mais si j'ai acc\xE8s \xE0 plus de ressource
-      je peux le remettre comme neuf"
-  Reponse1: "R\xE9pare le moteur au minimum"
-  Reponse2: Prend dans le stockage on fera avec
+    Text: Event6.question
+  Reponse1: Event6.choix.1
+  Reponse2: Event6.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Lizzie
-      Text: C'est comme si c'etait fait
+      Text: Event6.reponse.1
     JoyEffect: 5
   ConsequenceReponse2:
   - Dialogue:
       Name: Lizzie
-      Text: Avec plaisir
+      Text: Event6.reponse.2
     JoyEffect: 5
   - Dialogue:
       Name: Rufus

@@ -14,20 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description:
   - Name: Capitaine
-    Text: Ils vont nous rattraper.
+    Text: Event19.dialogue.1
   - Name: Rufus
-    Text: "Nos options deviennent limit\xE9 on va devoir se repr\xE9parer \xE0 combattre
-      !"
+    Text: Event19.dialogue.2
   - Name: Jazz
-    Text: "N\xE9anmoins avec les r\xE9parations et nos ressources va falloir choisir
-      entre la d\xE9fense et l\u2019attaque."
-  Reponse1: "Privil\xE9gier l\u2019attaque"
-  Reponse2: "Privil\xE9gier la d\xE9fense"
+    Text: Event19.question
+  Reponse1: Event19.choix.1
+  Reponse2: Event19.choix.2
   Character: {fileID: 0}
   ConsequenceReponse1:
   - Dialogue:
       Name: Lizzie
-      Text: "Faudrait penser un peu \xE0 notre survie aussi."
+      Text: Event19.reponse.1
     JoyEffect: -5
   - Dialogue:
       Name: Jazz
@@ -36,7 +34,7 @@ MonoBehaviour:
   ConsequenceReponse2:
   - Dialogue:
       Name: Jazz
-      Text: Mais on va finir par perdre si ils nous encerclent.
+      Text: Event19.reponse.2
     JoyEffect: -5
   - Dialogue:
       Name: Lizzie
