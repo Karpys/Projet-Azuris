@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EventManager : MonoBehaviour
@@ -163,7 +164,7 @@ public class EventManager : MonoBehaviour
             BarreManager.instance.HideBarre(1);
         }else if (name == "Defaite")
         {
-            Debug.Log("Defaite");
+            SceneManager.LoadScene(0);
         }
     }
 
